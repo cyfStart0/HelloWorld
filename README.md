@@ -1,7 +1,7 @@
-#ThoughtWorks作业--陈亚飞
+# ThoughtWorks作业--陈亚飞
 联系方式：18844183109<br>
 邮 箱: small__talk@163.com<br>
-##题目
+## 题目
     文本处理是非常常见但又非常重要的任务。其中操作纷繁复杂。而今天我们的目标就是制作一个小型的文本预处理器。其主要功能就是对文本进行预处理以便后续进行固定宽度的排版。为了方 便说明，我们定义如下的概念： 
 * 空白字符（white space）：指空格 ' '。 
 * 文本字符（character）：指大写或者小写的英文字母。
@@ -14,7 +14,7 @@
                         The main theme of education in
                         engineering school is learnin 
                         g to teach yourself 
-##要求 
+## 要求 
     现在请书写一个函数，该函数的输入为两个参数： 
 * 需要处理的文本 
 * 排版宽度。 
@@ -32,11 +32,11 @@
 又例如，假设输入为："So   many whitespaces"，而排版宽度为 10，则返回： 
     
     So(1);   (1);many(1); (1);whitespaces(2,3); 
-##异常处理 
+## 异常处理 
  * 如果输入文本中包含有异常的字符，则返回 "ERROR: Invalid character detected!"。 
  * 输入的宽度只能为 [10, 80] 之间的整数。如果超出这个范围则返回："ERROR: Width out of range!" 
  
-##程序说明
+## 程序说明
 * 工程名为ThoughtWorks,下面有cn.thoughtworks包，包含了TextProcessor类。
 * 工程中imgs文件夹下为测试用例和异常处理运行结果的截图。
 * 文本处理器的类定义为TextProcessor类
@@ -74,11 +74,11 @@ public static StringBuffer handleLastChar(StringBuffer stb,ArrayList<String> lis
  */
 public static ArrayList<String> subText(String text,int width)
 ```
-##程序运行
+## 程序运行
 * 将项目导入到eclipse中，即可运行
 
 
-##运行结果：
+## 运行结果：
 * 测试用例1：
         The main theme of education in engineering school is learning to teach yourself
 * 运行结果：
@@ -99,7 +99,7 @@ public static ArrayList<String> subText(String text,int width)
     
 * 结论：
     运行结果与预期一致。
-##异常处理：
+## 异常处理：
 * 异常1：输入文本中包含有异常的字符：
 * 返回结果：
         ERROR: Invalid character detected!
